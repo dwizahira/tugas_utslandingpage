@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>portopolio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav" id="myNav">
+            <div class="nav-logo">
+                <a href="#"><img src="assets/foto/LOGO (1).png" alt="logo" width="80px"></a>
+            </div>
+            <a href="#home" class="active">Home</a>
+            <a href="#today-menu">Menu Hari Ini</a>
+            <a href="#popular-menu">Menu Populer</a>
+            <a href="#contact">Hubungi Kami</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="banner">
+                <img src="assets/foto/LOGO (1).png" width="100%">
+                <div class="search">
+                    <br><br>
+                    <h3>CARI SEMUA RESEP</h3>
+                    <input type="text" class="" placeholder="Mau makan apa hari ini ?">
+                    <input type="submit" value="Submit"> <br><br><br><br><br>
+                </div>
+            </div>
+
+            <!-- Menu Hari Ini -->
+            <div class="today-menu" id="today-menu"><br>
+                <h4>MENU HARI INI</h4> <br>
+                <h3 id="displayDateTime"></h3><br>
+                <script type="text/javascript">
+                  var today = new Date();
+                  var day = today.getDay();
+                  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+                  var date = +today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+                  var dateTime = date+' ';
+                   
+                  document.getElementById("displayDateTime").innerHTML = dateTime;
+ 
+                </script>
+                <center>
+                    <hr style="width: 10%;">
+                </center><br><br>
+                <div class="card">
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/foto/opor.jpg" alt="Opor" width="100%"><br><br>
+                            <h3>OPOR AYAM</h3> <br>
+                            <article>
+                                <p>Opor Ayam dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.</p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/foto/tumis-kangkug.jpg" alt="" width="100%"><br><br>
+                            <h3>TUMIS KANGKUNG</h3><br>
+                            <article>
+                                <p>Tumis Kangkung dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.
+                                </p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/foto/tempe-goreng.jpg" alt="tempe-goreng" width="100%"><br><br>
+                            <h3>TEMPE GORENG</h3><br>
+                            <article>
+                                <p>Tempe Goreng dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.
+                                </p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                </div><br><br>
+            </div>
+
+            
+            <div class="popular-menu" id="popular-menu"><br>
+                <h4>MENU POPULER</h4> <br>
+                <center>
+                    <hr style="width: 10%;">
+                </center><br><br>
+                <div class="card">
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/foto/ayam-goreng.jpg" alt="ayam-goreng" width="100%"><br><br>
+                            <h3>AYAM GORENG</h3> <br>
+                            <article>
+                                <p>Ayam Goreng dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.</p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/foto/sayur-bayam.jpg" alt="sayur-bayam" width="100%"><br><br>
+                            <h3>SAYUR BAYAM</h3> <br>
+                            <article>
+                                <p>Sayur Bayam dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.</p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/foto/sate-ayam.jpg" alt="sate-ayam" width="100%"><br><br>
+                            <h3>SATE AYAM</h3> <br>
+                            <article>
+                                <p>Sate Ayam dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.</p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+
+            <div class="contact" id="contact"><br>
+                <h4>HUBUNGI KAMI</h4> <br>
+                <center>
+                    <hr style="width: 10%;">
+                    <br><br>
+                    <div class="form">
+                        <input type="text" class="" placeholder="Nama">
+                        <input type="text" class="" placeholder="Alamat Email">
+                        <input type="text" class="" placeholder="Nama Menu">
+                        <textarea name="" id="" placeholder="Deskripsikan tentang menu anda"></textarea>
+                        <br><br>
+                        <input type="submit" value="Kirim">
+                    </div><br><br></BR>
+                </center>
+            </div>
+            <section id="about">
+                <div class="title-section">
+                  <h1>about</h1>
+                </div>
+                <div class="row">
+                  <div class="col-4 col-m-12 col-t-5">
+                    <div class="card">
+                      <div class="profile-circle">
+                      </div>
+                      <p class="name">Rial Husne</p>
+                      <span>TI19220006</span>
+                      <div class="sosmed">
+                        <a href="">
+                          <img src="assets/foto/Whatsapp.png" alt="" class="icon-sosmed">
+                        </a>
+                        <a href="">
+                          <img src="assets/foto/instagram.png" alt="" class="icon-sosmed">
+                        </a>
+                        <a href="">
+                          <img src="assets/foto/youtube.png" alt="" class="icon-sosmed">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-8 col-m-12 col-t-7">
+                    <p class="story">
+                      Hallo nama saya rial husne bisa dipanggil rial,ria,atau hus.
+                      saya tinggal di Lanji,Desa Darmaji dan sekarang sedang kuliah di 
+                      STMIK LOMBOK, mengambil prodi TEKNIK INFORMATIKA
+                       kini tengah menempuh smester 3. 
+                      
+                    </p>
+          
+                  </div>
+                </div>
+              </section>
+          
+              <!-- section 4 -->
+              <section id="contact">
+                <div class="title-section">
+                  <h1>contact</h1>
+                </div>
+                <div class="row jusify-center">
+                  <div class="col-5 col-m-12">
+                    <div class="card flex-row mb-1">
+                      <i class="fa-solid fa-phone fa-xl"></i>
+                      <img src="assets/foto/Vector.png">
+                      <p>+62 859 3610 1376</p>
+                    </div>
+                    <div class="card flex-row mb-1">
+                      <i class="fa-brands fa-whatsapp fa-xl"></i>
+                      <img src="assets/foto/Whatsapp.png">
+                      <p>+62 859 3610 1376</p>
+                    </div>
+                    <div class="card flex-row mb-1">
+                      <i class="fa-solid fa-envelope fa-xl"></i>
+                      <img src="assets/foto/gmail.png">
+                      <p>riyalhusna475@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="col-4 col-m-12">
+                    <div class="card mb-1">
+                      <input type="text" placeholder="Email" class="form-control">
+                      <textarea rows="10" class="form-control" placeholder="Message"></textarea>
+                      <button class="btn-default">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer>
+                <a href="#">Rial husne</a>
+              </footer>
+            </div>
+          </body>
+          </html>
+
+      </div>
+    </div>
+  </section>
+</html>
